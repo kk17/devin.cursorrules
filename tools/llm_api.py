@@ -133,7 +133,7 @@ def main():
 
     if not args.model:
         if args.provider == 'openai':
-            args.model = "gpt-3.5-turbo"
+            args.model = "gpt-4o"
         elif args.provider == "deepseek":
             args.model = "deepseek-chat"
         elif args.provider == 'anthropic':
