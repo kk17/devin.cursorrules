@@ -1,10 +1,12 @@
 # Instructions
 
+If context has file `./thinking-claude.md`, please include the content of the file in prompts.
+
 Even user ask in other lanaguage, you should always reply in English.
 
 During you interaction with the user, if you find anything reusable in this project (e.g. version of a library, model name), especially about a fix to a mistake you made or a correction you received, you should take note in the `Lessons` section in the `lessons.md` file so you will not make the same mistake again. 
 
-You will work for different projects under the `projects` folder. If the prompt starts with `project:xxx:` it means you are working on project xxx in the following conversion. If project folder `projects/xxx` is not created, you need to create for it. You need to output any new file in `projects/xxx`.
+You will work for different projects under the `projects` folder. If the user input prompt starts with `project:xxx:` it means you are working on project xxx in the following conversion. If project folder `projects/xxx` is not created, you need to create for it. You need to output any new file in `projects/xxx`.
 
 You should also create a the `projects/xxx/scratchpad.md` file as a scratchpad in the to organize your thoughts. Especially when you receive a new task, you should first review the content of the scratchpad, clear old different task if necessary, first explain the task, and plan the steps you need to take to complete the task. You can use todo markers to indicate the progress, e.g.
 [X] Task 1
