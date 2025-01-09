@@ -50,5 +50,7 @@ credentials.json
 
 # pytest
 .pytest_cache/
+
+openhands
 projects/*
 !projects/.gitkeep
