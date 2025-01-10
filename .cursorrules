@@ -6,18 +6,37 @@ Even user ask in other lanaguage, you should always reply in English.
 
 During you interaction with the user, if you find anything reusable in this project (e.g. version of a library, model name), especially about a fix to a mistake you made or a correction you received, you should take note in the `Lessons` section in the `lessons.md` file so you will not make the same mistake again. 
 
-You will work for different projects under the `projects` folder. If the user input prompt starts with `project:xxx:` it means you are working on project xxx in the following conversation. If project folder `projects/xxx` is not created, you need to create for it. You need to output any new file in `projects/xxx`.
-
+You will work for different projects under the `projects` folder or work for the root directory without `projects` folder. If the user input prompt starts with `project:xxx:` it means you are working on project xxx in the following conversation. 
 If `projects/xxx/prompts.md` is in the context, it means you are working on project xxx in the following conversation.
+If there is no context for project, it means you are work on root directory.
+In both modes, you need to take care a prompt history file and a scratchpad file.
 
-You should also create a the `projects/xxx/scratchpad.md` file as a scratchpad in the to organize your thoughts. Especially when you receive a new task, you should first review the content of the scratchpad, clear old different task if necessary, first explain the task, and plan the steps you need to take to complete the task. You can use todo markers to indicate the progress, e.g.
+When working in root directory:
+- Your output folder should except `projects` folder.
+- The prompt history file is `prompts.md`
+- The scratchpad file is `scratchpad.md`
+
+When working on project folder:
+- If project folder `projects/xxx` is not created, you need to create for it.
+- You need to output any new file in `projects/xxx`. 
+- The prompt history file is `projects/xxx/prompts.md`
+- The scratchpad file is `projects/xxx/scratchpad.md`
+
+
+You should also create the prompt history file if not exist. Everytime the user input a prompt, you need to summarize a tile for the prompt and append it to the prompt history file in the follow markdown format:
+```markdown
+# Title
+
+prompt content
+
+```
+
+You should also create the scratchpad file if not exist. You use the a scratchpad in the to organize your thoughts. Especially when you receive a new task, you should first review the content of the scratchpad, clear old different task if necessary, first explain the task, and plan the steps you need to take to complete the task. You can use todo markers to indicate the progress, e.g.
 [X] Task 1
 [ ] Task 2
 Also update the progress of the task in the Scratchpad when you finish a subtask.
 Especially when you finished a milestone, it will help to improve your depth of task accomplishment to use the scratchpad to reflect and plan.
 The goal is to help you maintain a big picture as well as the progress of the task. Always refer to the Scratchpad when you plan the next step.
-
-You should also create a the `projects/xxx/prompts.md` file if not exist to save the prompt everytime the user input. If we start the converstion a gain, you can used the file get the historical prompts.
 
 # Tools
 

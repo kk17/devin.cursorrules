@@ -43,6 +43,9 @@ pip install -r requirements.txt
 python -m playwright install chromium
 ```
 
+2. Optional: setup git hooks
+Run `./setup-hooks.sh` to install the hooks
+
 ## Tools Included
 
 - Web scraping with JavaScript support (using Playwright)
