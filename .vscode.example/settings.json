@@ -1,3 +1,11 @@
 {
-    "python.defaultInterpreterPath": "./venv/bin/python"
+    "python.defaultInterpreterPath": "./.venv/bin/python",
+    "files.exclude": {
+        "**/.git": false,
+        "**/.venv": false,
+        "**/.devcontainer": false,
+        ".vscode.example": false,
+        ".windsurfrules": false,
+        "openhands": false,
+    }
 }
